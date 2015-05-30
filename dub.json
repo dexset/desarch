@@ -1,0 +1,13 @@
+{
+    "name": "desarch",
+    "description": "D Extended Set Architech",
+    "authors": [ "Oleg Butko (deviator)" ],
+    "license": "MIT",
+    "targetType": "sourceLibrary",
+    "dependencies":
+    {
+        "dests" : "~>0.2.1",
+        "desstdx" : "~>0.1.0",
+        "deslog" : "~>0.2.0"
+    }
+}
