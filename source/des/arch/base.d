@@ -3,14 +3,12 @@ module des.arch.base;
 import std.string;
 
 import des.ts;
+import des.log;
 
+import des.arch.util;
 import des.arch.sig;
 import des.arch.slot;
 import des.arch.emm;
-
-import des.stdx.traits;
-
-import des.log;
 
 ///
 template isObject(alias f) { enum isObject = __traits(compiles,typeof(f)); }
@@ -43,7 +41,7 @@ interface DesBase : ExternalMemoryManager, SlotHandler
     ///
     mixin template DES()
     {
-        import des.stdx.traits;
+        import des.arch.util;
 
         static if( !is(typeof(__DES_BASE_CLASS)) )
         {
